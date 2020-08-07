@@ -8,4 +8,4 @@ describe('GET /', function() {
 });
 
 var assert = require('chai').assert;
-assert.isEqual(app.testFunction(), 123);
+assert.equal(app.testFunction(), 123);
