@@ -13,7 +13,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node init && node app.js",
     "test": "mocha --exit test/test.js"
   },
   "dependencies": {
