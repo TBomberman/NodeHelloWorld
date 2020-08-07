@@ -32,4 +32,9 @@ app.listen(PORT, () => {
   console.log('Press Ctrl+C to quit.');
 });
 
+function testFunction() {
+   return 123;
+}
+
 module.exports = app;
+module.exports.testFunction = testFunction;

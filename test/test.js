@@ -6,3 +6,6 @@ describe('GET /', function() {
  request(app).get('/').expect('Hello, world!', done);
  });
 });
+
+var assert = require('chai').assert;
+assert.isEqual(app.testFunction(), 123);
