@@ -14,13 +14,14 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "mocha --exit test/*.test.js"
+    "test": "mocha --exit test/test.js"
   },
   "dependencies": {
     "express": "^4.16.3"
   },
   "devDependencies": {
     "mocha": "^8.0.0",
+    “supertest”: “0.13.0”,
     "uuid": "^8.1.0",
     "chai": "^4.2.0",
     "node-fetch": "^2.6.0"
