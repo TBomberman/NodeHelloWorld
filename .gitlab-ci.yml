@@ -3,6 +3,7 @@ image: node:latest
 stages:
   - build
   - test
+  - deploy
 
 cache:
   paths:
@@ -11,7 +12,7 @@ cache:
 install_dependencies:
   stage: build
   script:
-    - npm install
+    - npm install NodeHelloWorld
   artifacts:
     paths:
       - node_modules/
@@ -19,3 +20,9 @@ install_dependencies:
 testing_testing:
   stage: test
   script: npm test
+
+deploy_linux:
+  stage: deploy
+  script:
+    - echo "Deploying Linux"
+    - ../packer build -force -example.json
