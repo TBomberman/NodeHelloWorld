@@ -27,5 +27,6 @@ deploy_linux:
   script:
     - echo "Deploying Linux"
     - echo $PATH
+    - who
     - pwd
     - ./packer build -force -example.json
