@@ -5,6 +5,9 @@ stages:
 #  - test
   - deploy
 
+before_script:
+  - ./packer.io --version
+
 cache:
   paths:
     - node_modules/
