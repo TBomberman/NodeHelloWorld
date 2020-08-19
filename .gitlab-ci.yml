@@ -31,4 +31,4 @@ deploy_linux:
   script:
     - ls -al
     - pwd
-    - ../packer.io build -force ../example.json
+    - .$HOME/../packer.io build -force image.json
