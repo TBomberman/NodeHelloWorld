@@ -26,5 +26,6 @@ deploy_linux:
   stage: deploy
   script:
     - echo "Deploying Linux"
+    - echo $PATH
     - pwd
     - ./packer build -force -example.json
