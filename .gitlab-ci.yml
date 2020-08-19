@@ -35,4 +35,4 @@ deploy_linux:
     - echo $PATH
     - who
     - pwd
-    - ./packer.io build -force -example.json
+    - ../packer.io build -force -../example.json
