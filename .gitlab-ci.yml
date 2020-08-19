@@ -6,6 +6,7 @@ stages:
   - deploy
 
 before_script:
+  - pwd
   - ./packer.io --version
 
 cache:
