@@ -30,6 +30,8 @@ deploy_linux:
   stage: deploy
   script:
     - echo "Deploying Linux"
+    - cd $HOME
+    - ls -al
     - echo $PATH
     - who
     - pwd
