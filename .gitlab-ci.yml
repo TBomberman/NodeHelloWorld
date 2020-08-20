@@ -29,4 +29,4 @@ stages:
 deploy_linux:
   stage: deploy
   script:
-    - $HOME/../packer.io build -var profile=default packer.json
+    - $HOME/../packer.io build packer.json
