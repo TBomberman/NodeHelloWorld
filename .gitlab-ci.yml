@@ -12,6 +12,7 @@ cache:
 install_dependencies:
   stage: build
   script:
+    - pwd
     - npm install
   artifacts:
     paths:
