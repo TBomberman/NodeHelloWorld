@@ -29,7 +29,4 @@ stages:
 deploy_linux:
   stage: deploy
   script:
-    - ls -al
-    - pwd
-    - who
     - $HOME/../packer.io build -var profile=default image.json
