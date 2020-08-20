@@ -3,7 +3,7 @@ image: node:latest
 stages:
   - build
   - test
-  - create image
+  - image
 
 cache:
   paths:
@@ -21,7 +21,7 @@ testing_testing:
   stage: test
   script: npm test
 
-deploy_linux:
-  stage: create image
+create_image:
+  stage: image
   script:
     - $HOME/../packer.io build packer.json
