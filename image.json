@@ -1,13 +1,11 @@
 {
   "variables": {
-    "aws_access_key": "AKIAI3543VDF4BGRMB4A",
-    "aws_secret_key": "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"
+    "profile": null
   },
   "builders": [
     {
       "type": "amazon-ebs",
-      "access_key": "{{user `aws_access_key`}}",
-      "secret_key": "{{user `aws_secret_key`}}",
+      "profile": "{{user `profile`}}",
       "region": "us-west-2",
       "source_ami": "ami-0873b46c45c11058d",
       "instance_type": "t2.micro",

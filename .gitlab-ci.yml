@@ -32,4 +32,5 @@ deploy_linux:
     - ls -al
     - pwd
     - who
-    - $HOME/../packer.io build -force image.json
+    - $PATH = $PATH:~/gitlab-aws
+    - $HOME/../packer.io build -var profile=default image.json
