@@ -1,15 +1,11 @@
 {
-  "variables": {
-    "profile": null
-  },
   "builders": [
     {
       "type": "amazon-ebs",
-      "profile": "{{user `profile`}}",
       "region": "us-west-2",
       "source_ami": "ami-0873b46c45c11058d",
       "instance_type": "t2.micro",
-      "ami_name": "packer-ami {{timestamp}}",
+      "ami_name": "Image Created By Packer {{timestamp}}",
       "ssh_username": "ec2-user"
     }
   ],
