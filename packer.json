@@ -19,7 +19,8 @@
         ". ~/.nvm/nvm.sh",
         "nvm install node",
         "git clone https://github.com/TBomberman/NodeHelloWorld",
-        "npm install NodeHelloWorld"
+        "cd NodeHelloWorld",
+        "npm install"
       ]
     }
   ]

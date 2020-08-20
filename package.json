@@ -1,10 +1,7 @@
 {
-  "name": "gce-hello-world",
-  "description": "Simple Hello World Node.js sample for Google Compute Engine.",
+  "name": "hello-world-web-app",
   "version": "0.0.1",
   "private": true,
-  "license": "Apache-2.0",
-  "author": "Google Inc.",
   "repository": {
     "type": "git",
     "url": "https://github.com/GoogleCloudPlatform/nodejs-getting-started.git"
