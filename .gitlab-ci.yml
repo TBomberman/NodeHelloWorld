@@ -25,3 +25,5 @@ create_image:
   stage: image
   script:
     - $HOME/../packer.io build packer.json
+
+# touch
