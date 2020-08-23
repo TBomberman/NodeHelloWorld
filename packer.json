@@ -1,7 +1,4 @@
 {
-  "variables": {
-    "version": ""
-  },
   "builders": [
     {
       "type": "amazon-ebs",
@@ -11,7 +8,7 @@
       "ami_name": "Created By Packer {{timestamp}}",
       "ssh_username": "ec2-user",
       "tags":{
-            "Build":"{{user `version`}}"
+            "Build":"{{env `PACKAGE_VERSION`}}"
          }
     }
   ],
