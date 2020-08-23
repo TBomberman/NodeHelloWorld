@@ -1,4 +1,7 @@
 {
+  "variables": {
+    "version": ""
+  },
   "builders": [
     {
       "type": "amazon-ebs",
@@ -6,7 +9,10 @@
       "source_ami": "ami-0873b46c45c11058d",
       "instance_type": "t2.micro",
       "ami_name": "Created By Packer {{timestamp}}",
-      "ssh_username": "ec2-user"
+      "ssh_username": "ec2-user",
+      "tags":{
+            "Build":"{{user `version`}}"
+         }
     }
   ],
   "provisioners": [
