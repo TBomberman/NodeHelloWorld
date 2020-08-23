@@ -25,6 +25,6 @@ create_image:
   stage: image
   script:
     - PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
-    - $HOME/../packer.io build packer.json -var 'build=$PACKAGE_VERSION'
+    - $HOME/../packer.io build -var 'build=$PACKAGE_VERSION' packer.json
 
 # touch
