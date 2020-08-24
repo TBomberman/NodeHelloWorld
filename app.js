@@ -14,6 +14,7 @@
 
 'use strict';
 
+var pjson = require('./package.json');
 const express = require('express');
 
 const app = express();
@@ -21,7 +22,7 @@ const app = express();
 app.get('/', (req, res) => {
   res
     .status(200)
-    .send('Hello, world!')
+    .send('Hello, world! v' + pjson.version)
     .end();
 });
 
